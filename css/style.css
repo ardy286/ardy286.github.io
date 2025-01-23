@@ -225,6 +225,25 @@ html::-webkit-scrollbar {
     color: #2EA5C3;
 }
 
+.modal-body{
+    height: 62vh;
+    max-height: 62vh;
+    overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: auto;
+}
+
 .modal-body a:hover{
     text-decoration: none;
     color: #2EA5C3;
