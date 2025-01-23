@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Kanit-SemiBold';
+    src:url('Kanit-SemiBold.ttf.woff') format('woff'),
+        url('Kanit-SemiBold.ttf.svg#Kanit-SemiBold') format('svg'),
+        url('Kanit-SemiBold.ttf.eot'),
+        url('Kanit-SemiBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.styleLogo{
+    font-family: Kanit-SemiBold, sans-serif;
+    font-weight:750;
+    text-shadow: 3px 1px #2EA5C3,-2px -2px #D832D0;
+}
+
+h1{
+    font-family: Kanit-SemiBold, sans-serif;
+}
+
+/* Couleurs personnalisées */
+.text-primary {
+    color: #2EA5C3 !important;
+}
+
+.btn-primary {
+    background-color: #2EA5C3;
+    border-color: #2EA5C3;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border-color: #D832D0;
+    color: #2EA5C3;
+}
+
+.btn-outline-primary {
+    border-color: #D832D0;
+    color: #2EA5C3;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2EA5C3;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Navbar verticale */
+.navbar-vertical {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-vertical .navbar-brand {
+    margin-bottom: 2rem;
+}
+
+.navbar-vertical .nav-link {
+    color: #ffffff;
+    margin: 0.5rem 0;
+    text-align: start;
+}
+
+.navbar-vertical .nav-link:hover {
+    color: #D832D0;
+}
+
+.navbar-vertical .nav-link:active{
+    color: red;
+}
+
+.projects-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px;
+    height: 90vh;
+    max-height: 90vh;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #D832D0, #2EA5C3) 3;
+    overflow-y: auto;
+    background-color: #101010;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    animation: borderAnimation 3s infinite;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.projects-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Cache la barre par défaut sur petits écrans */
+.navbar-vertical.hide {
+    transform: translateX(-100%);
+}
+
+/* Bouton pour petits écrans */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 200px; /* Ajuste l'espace pour la barre */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Ajuste le contenu lorsque la barre est masquée */
+.content.expanded {
+    margin-left: 0;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .navbar-vertical {
+        transform: translateX(-100%);
+    }
+
+    .navbar-vertical.show {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+html::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar {
+    width: auto;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: 0 0px 15px #2EA5C3;
+}
+
+.card img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #D832D0, #2EA5C3) 3;
+    transition: all 0.3s ease-in-out;
+    animation: borderAnimation 3s infinite;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: #2EA5C3;
+}
+
+.card-body a:hover{
+    text-decoration: none;
+    color: #D832D0;
+}
+
+.card-body a:active{
+    text-decoration: none;
+    color: red;
+}
+
+.nav-link i{
+    background: linear-gradient(90deg, #D832D0, #2EA5C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, #D832D0, #2EA5C3);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #2EA5C3, #D832D0);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #D832D0, #2EA5C3);
+    }
+}
