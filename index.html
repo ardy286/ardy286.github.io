@@ -65,7 +65,7 @@
                 <div class="container text-center text-light">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="card bg-black text-light">
+                            <div class="card bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('escapeGirl')">
                                 <img src="images/EscapeGirl/escapeGrilLogo.png"  alt="Kidnaped Escape Girl">
                                 <div class="card-body">
                                     <h5 class="card-title">Kidnaped Escape Girl</h5>
@@ -95,6 +95,9 @@
                     </div>
                 </div>
             </section>
+            <a href="#contact" title="Cliquez pour aller vers mes contacts." style="text-decoration: none; text-align: right; padding-right: 20px; padding-bottom: 10px;color: white;">
+                Contact <i class="fa-solid fa-down-long" style="color: white;"></i>
+            </a>
          </div>
 
         <!-- Contact -->
@@ -109,7 +112,7 @@
                                 <h5 class="card-title">Ariste Kindy</h5>
                                 <p class="card-text"><a title="Cliquez pour m'appeler." href="tel:+5146906589"><i class="fa-solid fa-phone"></i> (514) 690-6589</a></p>
                                 <p class="card-text"><a title="Cliquez pour m'envoyer un courriel." href="mailto:aristekindy93@gmail.com"><i class="fa-solid fa-envelope"></i> aristekindy93@gmail.com</a></p>
-                                <p class="card-text"><a title="Cliquez pour vous rediriger vers mon linkedin." href="http://www.linkedin.com/in/ardy286" target="_blank"><i class="fa-brands fa-linkedin"></i> Ardy286</a></p>
+                                <p class="card-text"><a title="Cliquez pour vous rediriger vers mon linkedin." href="http://www.linkedin.com/in/aristekindy" target="_blank"><i class="fa-brands fa-linkedin"></i> Kindy Ariste</a></p>
                                 <p class="card-text"><a title="Cliquez pour vous rediriger vers mon github." href="https://github.com/ardy286" target="_blank"><i class="fa-brands fa-github"></i> Ardy286</a></p>
                             </div>
                         </div>
@@ -119,7 +122,6 @@
             <br><br><br><br><br><br>
         </section>
     </div>
-
     <footer class="footer bg-dark text-light py-3">
         <div class="container">
             <div class="row text-center">
@@ -130,6 +132,21 @@
             </div>
         </div>
     </footer>
+    <!-- Modal Bootstrap -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-black text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Détails du projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenu de la modale...</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
 </body>
 </html>
