@@ -37,11 +37,22 @@ function loadProjectDetails(projectName) {
            <h5>Lien pour télécharger le jeu:</h5>
         <a href="https://ardy286.itch.io/escape-girl" title="Cliquez pour pouvoir télécharger le jeu." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://ardy286.itch.io/escape-girl</a>
         `;
-    } else if (projectName === 'project2') {
-        modalTitle.textContent = 'Projet 2';
+    } else if (projectName === 'reservite') {
+        modalTitle.textContent = 'Reservite';
         modalBody.innerHTML = `
-            <p>Description détaillée du Projet 2.</p>
-            <img src="images/projetPic.jpg" alt="Capture d'écran" class="img-fluid mb-3">
+            <p>Site web développé avec ASP.Net</p>
+            <div class="imdModal">
+      <img src="images/Reservite/Reservite1.png">
+      <img src="images/Reservite/Reservite2.png">
+      <img src="images/Reservite/Reservite3.png">
+      </div>
+      <p text-align:justify">
+      Reservite est un site web conçu pour faciliter la réservation de chambres d’hôtel sans avoir besoin de se déplacer. Grâce à sa plateforme intuitive, les utilisateurs peuvent rechercher, sélectionner et réserver des chambres en quelques clics. L’outil offre également aux administrateurs la possibilité de gérer efficacement l’hôtel, notamment les disponibilités, les réservations et les profils des clients.
+
+    Une fonctionnalité de communication en temps réel permet aux utilisateurs et aux administrateurs de dialoguer directement, que ce soit pour poser des questions, demander des modifications ou obtenir une assistance rapide. Reservite simplifie ainsi la gestion hôtelière tout en offrant une expérience utilisateur fluide et interactive.
+    </p>
+           <h5>Lien GitHub du projet:</h5>
+        <a href="https://github.com/ardy286/reservite" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://github.com/ardy286/reservite</a>
         `;
     } else if (projectName === 'project3') {
         modalTitle.textContent = 'Projet 3';
