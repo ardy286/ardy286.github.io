@@ -226,6 +226,34 @@ html::-webkit-scrollbar {
     transition: all 0.3s ease-in-out;
     animation: borderAnimation 3s infinite;
 }
+
+.cardd {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0px 15px #2EA5C3;
+}
+
+.cardd .card-title{
+    color: white;
+    padding-top: 3%;
+}
+
+.cardd img {
+    height: 180px;
+    max-height: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #D832D0, #2EA5C3) 3;
+    transition: all 0.3s ease-in-out;
+    animation: borderAnimation 3s infinite;
+}
+
 .modal-body a{
     text-decoration: none;
     color: #2EA5C3;
@@ -296,3 +324,4 @@ html::-webkit-scrollbar {
         border-image-source: linear-gradient(45deg, #D832D0, #2EA5C3);
     }
 }
+
