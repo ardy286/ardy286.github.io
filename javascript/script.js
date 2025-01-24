@@ -69,7 +69,7 @@ function loadProjectDetails(projectName) {
       Le jeu du pendu, c'est un jeu où l'objectif est de deviner un mot spécifique en proposant des lettres une à une. Chaque tentative incorrecte rapproche les joueurs de la défaite, symbolisée par le dessin progressif d’un pendu. Ce jeu, à la fois simple et captivant, mêle suspense et réflexion. Il exige de la stratégie, car les joueurs doivent analyser leurs choix pour maximiser leurs chances de deviner le mot avant que le pendu ne soit entièrement dessiné. Le jeu de pendu est souvent utilisé comme un outil ludique pour renforcer le vocabulaire et stimuler l'esprit, tout en offrant une expérience amusante et engageante pour les participants de tout âge. Que ce soit pour passer le temps ou pour un défi amical, le pendu reste un classique intemporel qui allie plaisir et apprentissage.
     </p>
            <h5>Lien GitHub du projet:</h5>
-        <a href="https://github.com/ardy286/Jeu_du_pendu" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://github.com/ardy286/reservite</a>
+        <a href="https://github.com/ardy286/Jeu_du_pendu" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://github.com/ardy286/Jeu_du_pendu</a>
         `;
     } else {
         modalTitle.textContent = 'Projet inconnu';
