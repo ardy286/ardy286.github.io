@@ -34,6 +34,10 @@ h1{
     color: #2EA5C3;
 }
 
+body{
+    background-color: black;
+}
+
 .btn-outline-primary {
     border-color: #D832D0;
     color: #2EA5C3;
@@ -282,6 +286,7 @@ html::-webkit-scrollbar {
     height: 62vh;
     max-height: 62vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .modal-body::-webkit-scrollbar-track {
