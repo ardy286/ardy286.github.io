@@ -55,7 +55,7 @@ function loadProjectDetails(projectName) {
         <p><a text-align:justify href="https://github.com/ardy286/reservite" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:underline;color: #2EA5C3;">https://github.com/ardy286/<br>reservite</a></p>
         `;
     } else if (projectName === 'pendu') {
-        modalTitle.textContent = 'Projet 3';
+        modalTitle.textContent = 'Jeu du pendu';
         modalBody.innerHTML = `
             <p>Jeu développé avec Kotlin sur Android Studio</p>
             <div class="row project-card">
@@ -70,6 +70,59 @@ function loadProjectDetails(projectName) {
     </p>
            <h5>Lien GitHub du projet:</h5>
         <p><a text-align:justify href="https://github.com/ardy286/Jeu_du_pendu" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:underline;color: #2EA5C3;">https://github.com/ardy286/<br>Jeu_du_pendu</a></p>
+        `;
+    } else if (projectName === 'calculator') {
+        modalTitle.textContent = 'Calculator AK';
+        modalBody.innerHTML = `
+            <p>Site web développé avec HTML</p>
+            <div class="imdModal">
+      <img src="images/Calculator/calculatro1.png">
+      <img src="images/Calculator/calculator2.png">
+      <img src="images/Calculator/calculator3.png">
+      </div>
+      <p text-align:justify">
+      C'est un site web de calculatrice conçu pour effectuer des calculs simples et rapides. Avec une interface claire et facile à utiliser, il permet d'effectuer des opérations de base comme l'addition, la soustraction, la multiplication et la division.
+
+Idéal pour les besoins du quotidien, ce site est accessible sur tous les appareils connectés, qu’il s’agisse d’un ordinateur, d’une tablette ou d’un téléphone portable. Sa simplicité et son efficacité en font un outil pratique pour les étudiants, les professionnels ou toute personne ayant besoin d’une calculatrice en ligne. Ce projet met l'accent sur une expérience utilisateur fluide et intuitive, avec un design épuré qui va droit au but.
+      </p>
+           <h5>Lien GitHub du projet:</h5>
+        <p><a text-align:justify href="https://github.com/ardy286/Calculator" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:underline;color: #2EA5C3;">https://github.com/ardy286/<br>Calculator</a></p>
+        `;
+    } else if (projectName === 'chiffreexact') {
+        modalTitle.textContent = 'Chiffre exact';
+        modalBody.innerHTML = `
+            <p>Jeu développé avec Python</p>
+            <div class="row project-card">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact1.png">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact2.png">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact3.png">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact4.png">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact5.png">
+      <img class="imageTlf" src="images/ChiffreExact/chiffreexact6.png">
+      </div>
+      <p text-align:justify">
+      Le jeu Chiffre Exact est un défi amusant et stratégique où vous devez deviner un chiffre mystère choisi au hasard. Vous commencez la partie avec un score initial de 50 points, ce qui représente votre capital de tentatives. Le principe est simple : à chaque tour, vous proposez un chiffre. Si votre choix est incorrect, non seulement vous perdez 5 points, mais le programme vous aide en vous indiquant si le chiffre que vous avez proposé est supérieur ou inférieur au chiffre recherché. Cela vous permet d’affiner progressivement vos suppositions et d’approcher la bonne réponse.  
+
+Cependant, la pression augmente à mesure que votre score diminue, car si vous atteignez zéro avant d’avoir trouvé le bon chiffre, la partie est perdue. Le défi réside donc dans votre capacité à faire des choix judicieux tout en tenant compte des indices donnés par le programme. D’un autre côté, si vous parvenez à deviner le chiffre exact avant que votre score ne tombe à zéro, la victoire est à vous, preuve de votre perspicacité et de votre logique. Ce jeu, à la fois simple et captivant, mettra à l’épreuve votre réflexion et votre capacité à gérer vos ressources limitées.
+        </p>
+           <h5>Lien GitHub du projet:</h5>
+        <p><a text-align:justify href="https://github.com/ardy286/Jeu-Hasard" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:underline;color: #2EA5C3;">https://github.com/ardy286/<br>Jeu-Hasard</a></p>
+        `;
+    } else if (projectName === 'position') {
+        modalTitle.textContent = 'Position';
+        modalBody.innerHTML = `
+            <p>Site web développé avec HTML</p>
+            <div class="imdModal">
+      <img src="images/Position/position1.png">
+      <img src="images/Position/position2.png">
+      </div>
+      <p text-align:justify">
+      C'est un site web de calculatrice conçu pour effectuer des calculs simples et rapides. Avec une interface claire et facile à utiliser, il permet d'effectuer des opérations de base comme l'addition, la soustraction, la multiplication et la division.
+
+Idéal pour les besoins du quotidien, ce site est accessible sur tous les appareils connectés, qu’il s’agisse d’un ordinateur, d’une tablette ou d’un téléphone portable. Sa simplicité et son efficacité en font un outil pratique pour les étudiants, les professionnels ou toute personne ayant besoin d’une calculatrice en ligne. Ce projet met l'accent sur une expérience utilisateur fluide et intuitive, avec un design épuré qui va droit au but.
+      </p>
+           <h5>Lien GitHub du projet:</h5>
+        <p><a text-align:justify href="https://github.com/ardy286/position" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:underline;color: #2EA5C3;">https://github.com/ardy286/<br>position</a></p>
         `;
     } else {
         modalTitle.textContent = 'Projet inconnu';
