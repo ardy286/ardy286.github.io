@@ -185,7 +185,10 @@ En parallèle, il y a un administrateur qui dispose de tous les droits nécessai
         modalBody.innerHTML = `
             <p>Site web développé avec PHP</p>
             <div class="imdModal">
-      <img src="images/MyNote/photos-a-venir-1.jpg">
+      <img src="images/MyNote/note1.png">
+      <img src="images/MyNote/note2.png">
+      <img src="images/MyNote/note3.png">
+      <img src="images/MyNote/note4.png">
       </div>
       <p text-align:justify">
       Mes Notes est une application pratique et performante qui offre un espace de stockage illimité pour toutes vos notes, vous permettant d’y accéder à tout moment et depuis n’importe quel endroit dans le monde. Que vous soyez à la maison, au bureau ou en déplacement, vos notes restent à portée de main, grâce à une synchronisation rapide et efficace sur tous vos appareils.
