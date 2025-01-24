@@ -54,11 +54,22 @@ function loadProjectDetails(projectName) {
            <h5>Lien GitHub du projet:</h5>
         <a href="https://github.com/ardy286/reservite" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://github.com/ardy286/reservite</a>
         `;
-    } else if (projectName === 'project3') {
+    } else if (projectName === 'pendu') {
         modalTitle.textContent = 'Projet 3';
         modalBody.innerHTML = `
-            <p>Description détaillée du Projet 3.</p>
-            <img src="images/projetPic.jpg" alt="Capture d'écran" class="img-fluid mb-3">
+            <p>Jeu développé avec Kotlin sur Android Studio</p>
+            <div class="row project-card">
+      <img class="imageTlf" src="images/Pendu/pendu1.png">
+      <img class="imageTlf" src="images/Pendu/pendu2.png">
+      <img class="imageTlf" src="images/Pendu/pendu3.png">
+      <img class="imageTlf" src="images/Pendu/pendu2.png">
+      <img class="imageTlf" src="images/Pendu/pendu3.png">
+      </div>
+      <p text-align:justify">
+      Le jeu du pendu, c'est un jeu où l'objectif est de deviner un mot spécifique en proposant des lettres une à une. Chaque tentative incorrecte rapproche les joueurs de la défaite, symbolisée par le dessin progressif d’un pendu. Ce jeu, à la fois simple et captivant, mêle suspense et réflexion. Il exige de la stratégie, car les joueurs doivent analyser leurs choix pour maximiser leurs chances de deviner le mot avant que le pendu ne soit entièrement dessiné. Le jeu de pendu est souvent utilisé comme un outil ludique pour renforcer le vocabulaire et stimuler l'esprit, tout en offrant une expérience amusante et engageante pour les participants de tout âge. Que ce soit pour passer le temps ou pour un défi amical, le pendu reste un classique intemporel qui allie plaisir et apprentissage.
+    </p>
+           <h5>Lien GitHub du projet:</h5>
+        <a href="https://github.com/ardy286/Jeu_du_pendu" title="Cliquez pour vous rediriger sur GitHub." target="_blank" style="text-decoration:none;color: #2EA5C3;">https://github.com/ardy286/reservite</a>
         `;
     } else {
         modalTitle.textContent = 'Projet inconnu';
