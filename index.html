@@ -30,41 +30,62 @@
     <div class="content">
         <!-- Accueil -->
         <section id="accueil" class="vh-100 d-flex align-items-center bg-black text-light" style="background-image: url('images/photoAcceuil.JPG');">
-            <div class="container text-center">
-                <h1 id="greeting" class="display-4">Bonjour, Je suis <span class="styleLogo">A</span>riste <span class="styleLogo">K</span>indy</h1>
-                <p class="lead">Un passionné de la programmation</p>
-                <a href="#propos" title="Cliquez pour aller vers l'à propos." class="btn btn-primary btn-lg">À propos de moi</a>
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Colonne pour la photo -->
+                    <div class="col-md-4 pili text-center">
+                        <div class="photo-frame ">
+                            <div class="photo-border">
+                                <img src="images/photoContact.jpg" alt="Photo de profil" class="img-fluid rounded-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Colonne pour les informations -->
+                    <div class="col-md-8 ">
+                        <h1 id="greeting" class="display-4"></h1>
+                        <p class="lead">Des Cayes à Montréal, ma passion pour le développement Web et Mobile fusionne créativité et technologie. Je conçois des solutions qui racontent une histoire, transforment des idées et repoussent les limites du possible.</p>
+                        <div class=" d-flex">
+                            <a href="https://calendly.com/aristekindy93" title="Cliquez pour planifier une rencontre." target="_blank"class="btn btn-primary btn-lg"><i class="fa-solid fa-video"></i> Planifiez une rencontre</a>
+                            <a  href="#contact" title="Cliquez pour vous rediriger sur GitHub." style="padding-left: 80px;text-decoration:underline;color: #2EA5C3;">Autres contacts</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <div class=" bg-light" style="height: 1px;"></div>
 
         <!-- À propos -->
         <section id="propos" class="py-5 bg-black">
             <div class="container text-center text-light">
-                <h2 class="mb-4">À propos de moi</h2>
-                <p style="padding-right: 15%;padding-left: 15%;">
-                    Je suis Ariste Kindy, un développeur junior passionné par le Web et le Mobile, en fin d’études en programmation au Cégep de Rosemont. Mon parcours académique m’a permis de développer et de perfectionner des compétences variées dans le développement d’applications, la programmation orientée objet, la sécurité informatique et la gestion de projets.<br>Au fil de ma formation, j’ai acquis des compétences techniques solides, notamment :<br>
+                <h2>À propos de moi</h2>
+                <p class="justifier" style="margin-left: 25px;margin-right: 25px;">
+                    Je suis Ariste Kindy, un développeur junior passionné par le Web et le Mobile, en fin d’études en programmation au Cégep de Rosemont. Mon parcours académique m’a permis de développer et de perfectionner des compétences variées dans le développement d’applications, la programmation orientée objet, la sécurité informatique et la gestion de projets.
+                </p>
+                <p>Au fil de ma formation, j’ai acquis des compétences techniques solides, notamment :<br>
                     <br>Développement Web : HTML, CSS, Angular, React, JavaScript, Bootstrap, Razor.
                     <br>Développement Backend : Spring Boot, Python, Java, Java EE, C#, ASP.NET Core, PHP.
                     <br>Développement Mobile : Kotlin avec Android Studio.
                     <br>Bases de Données : SQL Server, MySQL, MariaDB.
                     <br>Outils de Développement : Visual Studio, IntelliJ IDEA, Eclipse, Unity.
-                    <br>Gestion de Projet : Git, Azure DevOps.<br><br>
-                    En plus de mes compétences techniques, j’ai renforcé des qualités personnelles comme l’écoute, la communication, l’autonomie et le travail en équipe, qui sont essentielles pour évoluer dans le domaine de la programmation.
-
+                    <br>Gestion de Projet : Git, Azure DevOps.
+                </p>
+                <p class="justifier"  style="margin-left: 25px;margin-right: 25px;">
+                    En plus de mes compétences techniques, j’ai renforcé des qualités personnelles comme l’écoute, la communication, l’autonomie et le travail en équipe, qui sont essentielles pour évoluer dans le domaine de la programmation.<br>
                     Grâce à ces connaissances, j’ai réalisé plusieurs projets, mettant en pratique des technologies modernes et des méthodologies adaptées aux besoins du marché. Mon objectif est de continuer à relever des défis et à contribuer à des projets innovants au sein d’équipes dynamiques.
                 </p>
                 <br><br><br><br><br>
                 <a href="#projets" class="btn btn-outline-primary">Voir mes projets</a>
             </div>
         </section>
+        <div class=" bg-light" style="height: 1px;"></div>
 
         <!-- Projets -->
-         <div id="projets" class="container text-center bg-black text-light">
-            <h2 class="mb-4">Mes Projets</h2>
+         <div id="projets" class="container text-center bg-black text-light" style="padding-top: 10px;">
             <section class="py-5 bg-black projects-container">
-                <div class="container text-center text-light">
+                <h2 class="mb-4">Mon catalogue de projets</h2>
+                <div class="container text-center text-light projectScroll">
                     <div class="row g-4">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('escapeGirl')">
                                 <img src="images/EscapeGirl/escapeGrilLogo.png"  alt="Kidnaped Escape Girl">
                                 <div class="card-body">
@@ -73,7 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('reservite')">
                                 <img src="images/Reservite/logoReserVite.png"  alt="Logo Reservite">
                                 <div class="card-body">
@@ -82,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('pendu')">
                                 <img src="images/Pendu/logo.JPG"  alt="Projet 3">
                                 <div class="card-body">
@@ -92,7 +113,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('portaili')">
                                 <img src="images/PortailI/logo.png"  alt="Logo Reservite">
                                 <div class="card-body">
@@ -101,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('calculator')">
                                 <img src="images/Calculator/ak_logo.png"  alt="Projet 3">
                                 <div class="card-body">
@@ -110,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('chiffreexact')">
                                 <img src="images/ChiffreExact/logo-chiffre-ecxat.png"  alt="Projet 3">
                                 <div class="card-body">
@@ -120,7 +141,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('position')">
                                 <img src="images/Position/logo.jpg"  alt="Projet 3">
                                 <div class="card-body">
@@ -129,7 +150,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('vinyl')">
                                 <img src="images/Vinyl/logo.png"  alt="Projet 3">
                                 <div class="card-body">
@@ -138,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('guichet')">
                                 <img src="images/GuichetAutomatique/Logo.png"  alt="Projet 3">
                                 <div class="card-body">
@@ -148,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card cardHover bg-black text-light" title="Cliquez pour ouvrir le projet." data-bs-toggle="modal" data-bs-target="#projectModal" onclick="loadProjectDetails('note')">
                                 <img src="images/MyNote/logo.png"  alt="Projet 3">
                                 <div class="card-body">
@@ -163,32 +184,22 @@
                     </div>
                 </div>
             </section>
-            <a href="#contact" title="Cliquez pour aller vers mes contacts." style="text-decoration: none; text-align: right; padding-right: 20px; padding-bottom: 10px;color: white;">
-                Contact <i class="fa-solid fa-down-long" style="color: white;"></i>
-            </a>
          </div>
+         <div class=" bg-light" style="height: 1px;margin-top: 12px;"></div>
 
         <!-- Contact -->
         <section id="contact" class="py-5 bg-black">
-            <div class="container text-center text-light">
-                <h2 class="mb-4">Mes informations de contact:</h2>
-                <div class="d-flex justify-content-center">
-                    <div class="col-md-3">
-                        <div class="cardd bg-black text-light">
-                            <img src="images/photoContact.jpg" alt="Projet 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Ariste Kindy</h5>
-                                <br>
-                                <p class="card-text"><a title="Cliquez pour m'appeler." href="tel:+5146906589"><i class="fa-solid fa-phone"></i> (514) 690-6589</a></p>
-                                <p class="card-text"><a title="Cliquez pour m'envoyer un courriel." href="mailto:aristekindy93@gmail.com"><i class="fa-solid fa-envelope"></i> aristekindy93@gmail.com</a></p>
-                                <p class="card-text"><a title="Cliquez pour vous rediriger vers mon linkedin." href="http://www.linkedin.com/in/aristekindy" target="_blank"><i class="fa-brands fa-linkedin"></i> Kindy Ariste</a></p>
-                                <p class="card-text"><a title="Cliquez pour vous rediriger vers mon github." href="https://github.com/ardy286" target="_blank"><i class="fa-brands fa-github"></i> Ardy286</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container text-light" style="margin-bottom: 9px;">
+                <h2 class="mb-4">Rejoignez-moi sur mes autres réseaux:</h2>
+                <p class="card-text"><a style="text-decoration:underline;color: #2EA5C3;" title="Cliquez pour m'appeler." href="tel:+15146906589"><i class="fa-solid fa-phone" style="margin-right: 10px;"></i>(514) 690-6589</a></p>
+                <br>
+                <p class="card-text"><a style="text-decoration:underline;color: #2EA5C3;" title="Cliquez pour m'envoyer un courriel." href="mailto:aristekindy93@gmail.com"><i style="margin-right: 10px;" class="fa-solid fa-envelope"></i>aristekindy93@gmail.com</a></p>
+                <br>
+                <p class="card-text"><a style="text-decoration:underline;color: #2EA5C3;" title="Cliquez pour vous rediriger vers mon linkedin." href="http://www.linkedin.com/in/aristekindy" target="_blank"><i style="margin-right: 10px;" class="fa-brands fa-linkedin"></i>Kindy Ariste</a></p>
+                <br>
+                <p class="card-text"><a style="text-decoration:underline;color: #2EA5C3;" title="Cliquez pour vous rediriger vers mon github." href="https://github.com/ardy286" target="_blank"><i style="margin-right: 10px;" class="fa-brands fa-github"></i>Ardy286</a></p>
             </div>
-            <br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
         </section>
     </div>
     <footer class="footer bg-dark text-light py-3">

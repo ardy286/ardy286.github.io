@@ -89,18 +89,40 @@ section {
 }
 
 .projects-container {
-    display: flex;
+    position: relative;
+    display: block;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding: 20px;
-    height: 87vh;
-    max-height: 87vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 97vh;
+    max-height: 97vh;
     border: 2px solid transparent;
     border-image: linear-gradient(45deg, #D832D0, #2EA5C3) 3;
-    overflow-y: auto;
+    overflow-y:hidden;
     background-color: #101010;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     animation: borderAnimation 3s infinite;
+}
+
+.projectScroll{
+    height: 77vh;
+    max-height: 77vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+    padding-top: 10px;
+}
+.projects-container h2 {
+    margin-bottom: 20px; /* Espace entre le titre et les cartes */
+    text-align: center; /* Centre le texte */
+    color: #ffffff; /* Couleur du texte */
+    border-bottom: 2px solid #ffffff; /* Ligne décorative */
+    padding-bottom: 3px; /* Espace entre le texte et la ligne */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
 }
 
 .modal-header button{
@@ -117,6 +139,14 @@ section {
     max-height: 600px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.lead{
+    text-align: justify;
+}
+
+.justifier{
+    text-align: justify;
 }
 
 .no-scroll {
@@ -140,6 +170,33 @@ section {
     animation: borderAnimation 3s infinite;
 }
 
+.photo-frame {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+
+.photo-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Applique le border-radius */
+    border: 5px solid transparent;
+    background-image: linear-gradient(45deg, #D832D0, #2EA5C3); /* Dégradé sur le parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.photo-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Applique aussi le border-radius à l'image */
+    object-fit: cover;
+}
+
+
 .projects-container::-webkit-scrollbar-track {
     background: #101010;
 }
@@ -150,6 +207,19 @@ section {
 }
 
 .projects-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.projectScroll::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+.projectScroll::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.projectScroll::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -191,6 +261,18 @@ section {
     .content {
         margin-left: 0;
     }
+
+    .photo-border {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%; /* Applique le border-radius */
+        border: 5px solid transparent;
+        background-image: linear-gradient(45deg, #D832D0, #2EA5C3); /* Dégradé sur le parent */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 html::-webkit-scrollbar-track {
@@ -207,10 +289,10 @@ html::-webkit-scrollbar {
 }
 
 .card {
-    width: 300px;
-    max-width: 300px;
-    height: 340px;
-    max-height: 340px;
+    width: 250px;
+    max-width: 250px;
+    height: 300px;
+    max-height: 330px;
     border-radius: 10px;
     overflow: hidden;
     display: block;
@@ -220,8 +302,8 @@ html::-webkit-scrollbar {
 }
 
 .card img {
-    height: 180px;
-    max-height: 180px;
+    height: 140px;
+    max-height: 140px;
     display: block;
     margin: 0 auto;
     margin-top: 5%;
