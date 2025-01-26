@@ -24,8 +24,14 @@ h1{
 }
 
 .btn-primary {
-    background-color: #2EA5C3;
-    border-color: #2EA5C3;
+    background-color: #800080; /* Fond mauve */
+    border-color: #2EA5C3; /* Bordure mauve clair */
+    color: white; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour l'effet 3D */
+    transition: all 0.3s ease-in-out; /* Transition fluide */
 }
 
 .btn-primary:hover {
@@ -47,6 +53,19 @@ body{
     background-color: #2EA5C3;
     color: #fff;
 }
+
+/* État actif : Couleur de fond mauve et texte blanc */
+.btn-primary:active, 
+.btn-primary.active,
+.btn-outline-primary:active, 
+.btn-outline-primary.active {
+    background-color: #800080 !important; /* Fond mauve */
+    color: white !important; /* Texte blanc */
+    border-color: #800080 !important; /* Bordure mauve */
+}
+
+
+
 
 /* Sections */
 section {
