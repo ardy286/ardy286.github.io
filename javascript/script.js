@@ -74,7 +74,7 @@ function loadProjectDetails(projectName) {
     } else if (projectName === 'calculator') {
         modalTitle.textContent = 'Calculator AK';
         modalBody.innerHTML = `
-            <p>Site web développé avec HTML</p>
+            <p>Site web développé avec HTML et javascript</p>
             <div class="imdModal">
       <img src="images/Calculator/calculatro1.png">
       <img src="images/Calculator/calculator2.png">
@@ -111,7 +111,7 @@ Cependant, la pression augmente à mesure que votre score diminue, car si vous a
     } else if (projectName === 'position') {
         modalTitle.textContent = 'Position';
         modalBody.innerHTML = `
-            <p>Site web développé avec HTML</p>
+            <p>Site web développé avec HTML et javascript</p>
             <div class="imdModal">
       <img src="images/Position/position1.png">
       <img src="images/Position/position2.png">
@@ -168,7 +168,7 @@ En combinant stockage centralisé des contenus, espace de collaboration interne,
     }else if (projectName === 'guichet') {
         modalTitle.textContent = 'Guichet automatique';
         modalBody.innerHTML = `
-            <p>Application de gestion de guichet automatique d'une banque avec Kotlin sur Android Studio</p>
+            <p>Application de gestion de guichet automatique d'une banque avec Java sur Scene Builder</p>
             <div class="imdModal">
       <img src="images/GuichetAutomatique/photos-a-venir-1.jpg">
       </div>

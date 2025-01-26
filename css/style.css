@@ -67,7 +67,8 @@ body{
 }
 
 /* État actif : Couleur de fond mauve et texte blanc */
-.btn-primary:active, 
+.btn-primary:active,
+.dropdown-menu .dropdown-item:active,
 .btn-primary.active,
 .btn-primaryy:active, 
 .btn-primaryy.active,
@@ -101,6 +102,35 @@ section {
     padding: 1rem 0;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+}
+
+.navbar-vertical .dropdown {
+    text-align: center; /* Centre le bouton dans la barre */
+}
+
+.g{
+    background: linear-gradient(90deg, #D832D0, #2EA5C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #2EA5C3;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #800080; /* Couleur de fond pour le menu */
+    color: white; /* Couleur du texte */
+}
+
+.dropdown-menu a {
+    color: white; /* Couleur des liens */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #9932CC; /* Couleur au survol */
 }
 
 .navbar-vertical .navbar-brand {
