@@ -292,6 +292,7 @@ section {
 
 }
 
+
 @media (max-width: 768px) {
     .col-md-6 {
         width: 50% !important; /* Force les colonnes à prendre 50% de la largeur */
@@ -308,6 +309,19 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar {
+    width: auto;
+}
+
+.co::-webkit-scrollbar-track {
+    background: #101010;
+}
+
+.co::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.co::-webkit-scrollbar {
     width: auto;
 }
 
