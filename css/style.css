@@ -40,6 +40,18 @@ h1{
     color: #2EA5C3;
 }
 
+.btn-primaryy {
+    background-color: #2EA5C3; /* Fond mauve */
+    border-color: #2EA5C3; /* Bordure mauve clair */
+    color: white
+}
+
+.btn-primaryy:hover {
+    background-color: black;
+    border-color: #D832D0;
+    color: #2EA5C3;
+}
+
 body{
     background-color: black;
 }
@@ -57,6 +69,8 @@ body{
 /* État actif : Couleur de fond mauve et texte blanc */
 .btn-primary:active, 
 .btn-primary.active,
+.btn-primaryy:active, 
+.btn-primaryy.active,
 .btn-outline-primary:active, 
 .btn-outline-primary.active {
     background-color: #800080 !important; /* Fond mauve */
