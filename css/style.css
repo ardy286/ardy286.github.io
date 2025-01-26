@@ -20,7 +20,7 @@ h1{
 
 /* Couleurs personnalisées */
 .text-primary {
-    color: #2EA5C3 !important;
+    color: #2EA5C3;
 }
 
 .btn-primary {
@@ -295,7 +295,7 @@ section {
 
 @media (max-width: 768px) {
     .col-md-6 {
-        width: 50% !important; /* Force les colonnes à prendre 50% de la largeur */
+        width: 50%;
     }
 }
 
