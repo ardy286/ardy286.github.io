@@ -113,6 +113,7 @@ section {
     background-color: black;
     padding-top: 10px;
 }
+
 .projects-container h2 {
     margin-bottom: 20px; /* Espace entre le titre et les cartes */
     text-align: center; /* Centre le texte */
@@ -124,6 +125,20 @@ section {
     margin-right: auto;
     padding-top: 0;
 }
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Taille du cercle */
+    height: 100px; /* Taille du cercle */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    background: linear-gradient(45deg, #D832D0, #2EA5C3); /* Couleur de fond avec un dégradé */
+    color: white; /* Couleur des icônes */
+    margin: 0 auto 10px auto; /* Centre l'icône et ajoute un espace en bas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optionnel : ajoute une ombre */
+}
+
 
 .modal-header button{
     background-color: #2EA5C3;
@@ -272,6 +287,14 @@ section {
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease-in-out;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 50% !important; /* Force les colonnes à prendre 50% de la largeur */
     }
 }
 
