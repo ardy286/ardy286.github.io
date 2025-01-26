@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentHour >= 0 && currentHour < 12) {
         greetingElement.innerHTML = 'Good morning, I am <span class="styleLogo">A</span>riste <span class="styleLogo">K</span>indy';
     } else {
-        greetingElement.innerHTML = 'Good afternoon, I amje suis <span class="styleLogo">A</span>riste <span class="styleLogo">K</span>indy';
+        greetingElement.innerHTML = 'Good afternoon, I am <span class="styleLogo">A</span>riste <span class="styleLogo">K</span>indy';
     }
 });
 
