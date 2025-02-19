@@ -352,19 +352,6 @@ section {
         transition: all 0.3s ease-in-out;
     }
 
-    html::-webkit-scrollbar-track {
-        background: #101010;
-    }
-    
-    html::-webkit-scrollbar-thumb {
-        background-color: #555;
-        border-radius: 5px;
-    }
-    
-    html::-webkit-scrollbar {
-        width: auto;
-    }
-
 
 }
 
@@ -374,12 +361,17 @@ section {
     }
 }
 
-html::-webkit-scrollbar {
-    display: none;
+html::-webkit-scrollbar-track {
+    background: #101010;
 }
 
-html, body{
-    overflow: hidden;
+html::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar {
+    width: auto;
 }
 
 .co:-webkit-scrollbar-track {
